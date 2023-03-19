@@ -26,7 +26,7 @@ protected void doPost(HttpServletRequest request,HttpServletResponse response) t
 		
 		ServletContext sc=getServletContext();
 		
-		String fullpath= sc.getRealPath("/WEB-INF/EmailList.txt");
+		String fullpath= sc.getRealPath("/WEB-INF/EmailList.txt");//Relative Path
 		
 		//Use Regular Java Classes
 		
@@ -36,7 +36,7 @@ protected void doPost(HttpServletRequest request,HttpServletResponse response) t
 		
 		//Store the User Object in request object
 		
-		request.setAttribute("user", user);
+		request.setAttribute("bappa", user);
 		
 		
 		//forward request and response objects to jsp page

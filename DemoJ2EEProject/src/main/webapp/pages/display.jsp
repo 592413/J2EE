@@ -12,7 +12,7 @@
 	
 	<%@ page import="demo.model.User" %>
 	
-	<% User user=(User) request.getAttribute("user"); %>
+	<% User user=(User) request.getAttribute("bappa"); %>
 	
 	<table>
 		<tr>

@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>  
 
-<servlet>
+<!-- <servlet>
 	<servlet-name>AddToEmailListServlet</servlet-name>
 	<servlet-class>demo.email.AddToEmailListServlet</servlet-class>
+</servlet> -->
+
+<servlet>
+	<servlet-name>AddToEmailListServlet</servlet-name>
+	<servlet-class>demo.controller.AddToEmailListServletMVC</servlet-class>
 </servlet>
 
 <servlet-mapping>
 	<servlet-name>AddToEmailListServlet</servlet-name>
 	<url-pattern>/addToEmailList</url-pattern>
 </servlet-mapping>
+
 
   <welcome-file-list>  
    <welcome-file>pages/index.jsp</welcome-file>  
