@@ -9,7 +9,7 @@
 <body>
 	<h1>Join our Email List</h1>
 	
-	<form action="addToEmailList" method="post">
+	<form action="pages/displayOnly.jsp" method="post">
 		<table>
 			<tr>
 				<td>First Name: </td>
