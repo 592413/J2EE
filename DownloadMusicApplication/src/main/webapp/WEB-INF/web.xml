@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>  
+
+<servlet>
+	<servlet-name>CheckUser</servlet-name>
+	<servlet-class>com.download.servlet.CheckUserServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>CheckUser</servlet-name>
+	<url-pattern>/checkUser</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AddToEmailListServlet</servlet-name>
+	<servlet-class>com.download.servlet.AddToEmailListServletMVC</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>AddToEmailListServlet</servlet-name>
+	<url-pattern>/addToEmailList</url-pattern>
+</servlet-mapping>
+
+<session-config>
+        <session-timeout>60</session-timeout>
+</session-config>
+
+
+ <welcome-file-list>  
+   <welcome-file>pages/index.jsp</welcome-file>  
+  </welcome-file-list>  
+</web-app> 
