@@ -16,6 +16,8 @@ public class AddToEmailListServlet extends HttpServlet{
 		String lastName=request.getParameter("lastName");
 		String email=request.getParameter("email");
 		
+		
+		
 		//Send Response to browser
 		
 		response.setContentType("text/html;charset=UTF-8");

@@ -9,7 +9,9 @@
 <body>
 	<h1>Join our Email List</h1>
 	
-	<form action="addToEmailList" method="post">
+	<% String pCode=(String) session.getAttribute("productCode");%>
+	
+	<form action="<%=response.encodeURL("addToEmailList?productCode="+pCode+"\"")%>" method="post">
 		<table>
 			<tr>
 				<td>First Name: </td>

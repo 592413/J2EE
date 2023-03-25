@@ -21,7 +21,7 @@ public class UserIO {
 		
 		File file=new File(filepath);
 		PrintWriter out =new PrintWriter(new FileWriter(file,true));
-		out.println(user.getEmail()+ " | " + user.getFirstName() + " | " + user.getLastName()  );
+		out.println(user.getEmail()+ "|" + user.getFirstName() + "|" + user.getLastName()  );
 		
 		out.close();
 	}
@@ -38,8 +38,10 @@ public class UserIO {
 		
 		 Iterator<String> itr =lines.iterator();
 		    while (itr.hasNext()) {
-		      System.out.println(itr.next());
-		    String [] values=itr.next().split(" | ");
+		    	String text=itr.next();
+		      System.out.println(text);
+		    String [] values=text.split("|");
+		    System.out.println(values);
 		    
 		    if(values[0].equalsIgnoreCase(emailAddress)) {
 		    	User user= new User(values[1], values[2], values[0]);
