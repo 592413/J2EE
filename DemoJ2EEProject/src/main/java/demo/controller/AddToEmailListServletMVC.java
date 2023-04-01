@@ -15,7 +15,8 @@ import demo.model.User;
 
 public class AddToEmailListServletMVC extends HttpServlet {
 
-protected void doPost(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+protected void doPost(HttpServletRequest request,HttpServletResponse response) 
+		throws ServletException,IOException{
 		
 		String firstName=request.getParameter("firstName");
 		String lastName=request.getParameter("lastName");

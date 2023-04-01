@@ -32,6 +32,10 @@ protected void doPost(HttpServletRequest request,HttpServletResponse response) t
 		
 		String fullpath= sc.getRealPath("/WEB-INF/EmailList.txt");//Relative Path
 		
+		
+		
+		
+		
 		//Use Regular Java Classes
 		
 		User user=new User(firstName,lastName,email);
