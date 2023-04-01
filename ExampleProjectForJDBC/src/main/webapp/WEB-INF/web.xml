@@ -9,6 +9,23 @@
     <servlet-name>ExampleServletName</servlet-name>
     <url-pattern>/exampleURL</url-pattern>
   </servlet-mapping>
+  
+  
+  <listener>
+  		<listener-class>com.example.listener.UserListListener</listener-class>
+  </listener>
+  
+  <filter>
+  		<filter-name>TestFilter</filter-name>
+  		<filter-class> com.example.filter.TestFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  		<filter-name>TestFilter</filter-name>
+<!--   		<servlet-name>ExampleServletName</servlet-name> -->
+		 <url-pattern>/exampleURL</url-pattern>
+  </filter-mapping>
+  
   <welcome-file-list>
     <welcome-file>pages/index.jsp</welcome-file>
   </welcome-file-list>

@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	<h1>Join our Email List</h1>
 
 	<form action="exampleURL" method="post">
@@ -34,6 +35,21 @@
 		</table>
 
 	</form>
+	
+	<table>
+		<tr>
+			<td align="left"> FirstName</td>
+			<td align="left">LastName</td>
+			<td align="left">Email</td>
+		</tr>
+		<c:forEach var="user" items="${users}">
+			<tr>
+				<td>${user.firstName}</td>
+				<td>${user.lastName}</td>
+				<td>${user.email}</td>
+			</tr>
+		</c:forEach>
+	</table>
 
 </body>
 </html>
