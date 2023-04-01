@@ -60,7 +60,7 @@ public class ExampleServlet extends HttpServlet {
 				
 			}
 			
-			
+			result.close();
 			
 		}catch(SQLException e) {
 			e.printStackTrace();
