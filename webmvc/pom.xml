@@ -12,6 +12,23 @@
 		<spring.version>4.0.5.RELEASE</spring.version>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 	</properties>
+	<!--	<profiles>-->
+	<!--		<profile>-->
+	<!--			<id>dev</id>-->
+	<!--			<activation>-->
+	<!--				<activeByDefault>true</activeByDefault>-->
+	<!--			</activation>-->
+	<!--			<properties>-->
+	<!--				<spring.profiles.active>dev</spring.profiles.active>-->
+	<!--			</properties>-->
+	<!--		</profile>-->
+	<!--		<profile>-->
+	<!--			<id>prod</id>-->
+	<!--			<properties>-->
+	<!--				<spring.profiles.active>prod</spring.profiles.active>-->
+	<!--			</properties>-->
+	<!--		</profile>-->
+	<!--	</profiles>-->
 	<dependencies>
 		<!-- Spring core & mvc -->
 		<dependency>
@@ -23,6 +40,33 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+		<!--Spring JDBC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!--Spring Aop -->
+		<!--
+		https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Apache Commons DBCP-->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!--MySQl Connector Dependency -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.32</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
 		<dependency>

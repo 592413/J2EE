@@ -16,33 +16,33 @@ public class HomeController {
 	}
 	
 
-	@RequestMapping(value="profile", method=RequestMethod.GET)
-	public String userProfile(Model model) {
-		
-		String name="Virat Kohli";
-		model.addAttribute("userName",name);
-		
-		return "usrProfile";
-		
-	}
-	
-	@RequestMapping(value="profile", method=RequestMethod.GET)
-	public String hello1(@RequestParam String firstName, 
-			@RequestParam String lastName,Model model) {
-		
-		String name= firstName+lastName;
-		model.addAttribute("userName",name);
-		
-		return "usrProfile";
-		
-	}
-	
-	@RequestMapping(value="profile/{name}", method=RequestMethod.GET)
-	public String hello2(@PathVariable String name,Model model) {
-		
-		model.addAttribute("userName",name);
-		
-		return "usrProfile";
-		
-	}
+//	@RequestMapping(value="profile", method=RequestMethod.GET)
+//	public String userProfile(Model model) {
+//		
+//		String name="Virat Kohli";
+//		model.addAttribute("userName",name);
+//		
+//		return "usrProfile";
+//		
+//	}
+//	
+//	@RequestMapping(value="profile", method=RequestMethod.GET)
+//	public String hello1(@RequestParam String firstName, 
+//			@RequestParam String lastName,Model model) {
+//		
+//		String name= firstName+lastName;
+//		model.addAttribute("userName",name);
+//		
+//		return "usrProfile";
+//		
+//	}
+//	
+//	@RequestMapping(value="profile/{name}", method=RequestMethod.GET)
+//	public String hello2(@PathVariable String name,Model model) {
+//		
+//		model.addAttribute("userName",name);
+//		
+//		return "usrProfile";
+//		
+//	}
 }
